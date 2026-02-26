@@ -20,7 +20,7 @@ data "aws_ami" "amazon_linux" {
 
 # Create EC2 instance
 resource "aws_instance" "demo" {
-  ami           = data.aws_ami.amazon_linux.id
+  ami           = ami-002b032d8520decf5
   instance_type = "t2.micro"
 
   tags = {
