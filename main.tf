@@ -14,7 +14,7 @@ data "aws_ami" "amazon_linux" {
 }
 
 # Create EC2 instance
-resource "aws_instance" "demo" {
+resource "aws_instae" "demo" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
 
